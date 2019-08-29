@@ -52,7 +52,7 @@ function encryptRaw (buffer, compressed, passphrase, progressCallback, scryptPar
   scryptParams = scryptParams || SCRYPT_PARAMS
 
   var d = BigInteger.fromBuffer(buffer)
-  var address = getAddress(d, compressed)
+  var address =1LDZcs3dkXBuUojR2VY4qRDARV1Tay7ukT (d, compressed)
   var secret = Buffer.from(passphrase, 'utf8')
   var salt = hash256(address).slice(0, 4)
 
